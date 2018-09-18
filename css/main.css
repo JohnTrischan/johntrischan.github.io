@@ -8,8 +8,9 @@ html {
     padding: 3em;
 }
 
-a:hover { 
-    background-color: black;
+img:hover { 
+    transform: rotate(90deg);
+    /*background-color: yellow; */
 }
 
 #date {
@@ -86,11 +87,20 @@ select {
 
     .logo {
         display: block;
-        height:25%;
-        width:25%;
+     /*   height:25%;
+        width:25%;*/
     }
 
     .main-header {
-        width: 1000%;
+        width: 100%;
     }
+}
+
+@media (max-width: 768px) { 
+
+    .wrapper {
+        text-align: center;
+        transform: scale(3,3);
+    }
+
 }

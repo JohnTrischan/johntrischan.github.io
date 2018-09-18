@@ -1,0 +1,96 @@
+html {
+    background-color: #384047
+}
+
+.main-header {
+    background-color: navy; 
+    margin: auto;
+    padding: 3em;
+}
+
+a:hover { 
+    background-color: black;
+}
+
+#date {
+    position: absolute;
+    left: 5%;
+}
+
+
+#time {
+    position: absolute;
+    right: 5%;  
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: lightgray;
+}
+
+
+
+h1 {
+    margin: 0 auto;
+    text-align: center;
+  }
+
+input[type="radio"] {
+  margin: 0 4px 8px 0;
+}
+
+.container {
+    padding-left: 1em;
+    padding-right: 1em;
+}
+    
+    
+    
+select {
+    padding: 6px;
+    height: 32px;
+    border-radius: 2px;
+    }
+
+.light {
+    color:darkorange;
+    font-family: 'Nunito', sans-serif;
+    }
+
+.main-footer { 
+    padding-top: 2em;
+    padding-bottom: 2em;
+    text-align: center;
+    color: darkgrey;
+    background-color: navy;
+}
+    
+/* ====================================
+ Media Queries
+ ======================================*/
+
+@media (min-width: 769px) {
+    
+    .wrap {
+        min-height: calc(100vh - 82px);
+    }
+    .container {
+        width: 70%;
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    .wrapper { 
+        margin: 20px 10px; 
+    }
+
+    .logo {
+        display: block;
+        height:25%;
+        width:25%;
+    }
+
+    .main-header {
+        width: 1000%;
+    }
+}

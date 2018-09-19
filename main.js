@@ -1,3 +1,6 @@
+//........................//
+//    Create Date         //
+//........................//
 
    var n = new Date();
    var y = n.getFullYear();
@@ -5,6 +8,9 @@
    var d = n.getDate();
    document.getElementById("date").innerHTML = m + "/" + d + "/" + y;
 
+//........................//
+//    Create Time         //
+//........................//
 
     var t = new Date();
     var h = t.getHours();
@@ -23,6 +29,9 @@
     
    // document.getElementById("sport").innerHTML = x;
 
+//........................//
+//    Radio output        //
+//........................//
 
    var radios = document.getElementsByName('sport');
    document.addEventListener("click", function() {
@@ -32,15 +41,21 @@ for (var i = 0, length = radios.length; i < length; i++)
  if (radios[i].checked)
  {
   // do whatever you want with the checked radio
-  //alert(radios[i].value);
+  //alert(radios[i].value);f
   //var selection = radios[i].value
   document.getElementById('radios[i].value')
   console.log(selection)
-  selection.innerHTML = radios[i].value
+  selection.innerHTML = "So you're a big " + radios[i].value + " fan, eh?"
   // only one radio can be logically checked, don't check the rest
  }
 }
 })
+
+
+
+
+
+
 
     
     

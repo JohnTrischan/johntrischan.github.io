@@ -4,7 +4,7 @@ html {
 
 .main-header {
     background-color: navy; 
-    margin: auto;
+  /*  margin: auto; */
     padding: 3em;
 }
 
@@ -70,7 +70,7 @@ select {
  Media Queries
  ======================================*/
 
-@media (min-width: 761px) {
+@media (min-width: 700px) {
     
     .wrap {
         min-height: calc(100vh - 82px);
@@ -96,11 +96,12 @@ select {
     }
 }
 
-@media (max-width: 760px) { 
+@media (max-width: 699px) { 
 
     .wrapper {
         text-align: center;
         transform: scale(3,3);
+        
     }
 
 }

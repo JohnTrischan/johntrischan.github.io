@@ -70,7 +70,7 @@ select {
  Media Queries
  ======================================*/
 
-@media (min-width: 769px) {
+@media (min-width: 481px) {
     
     .wrap {
         min-height: calc(100vh - 82px);
@@ -96,7 +96,7 @@ select {
     }
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 480px) { 
 
     .wrapper {
         text-align: center;

@@ -97,8 +97,8 @@ select {
 }
 
 @media (max-width: 699px) { 
-
-    .wrapper {
+    
+        .wrapper {
         text-align: center;
         transform: scale(3,3);
         

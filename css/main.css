@@ -2,14 +2,14 @@ html {
     background-color: #384047
 }
 
-.main-header {
-    background-color: navy; 
-  /*  margin: auto; */
-    padding: 3em;
+.title-header {
+    padding: 2em;
+
 }
 
 img:hover { 
     transform: rotate(90deg);
+    transition:.5s;
     /*background-color: yellow; */
 }
 
@@ -30,28 +30,16 @@ body {
 }
 
 
-
 h1 {
     margin: 0 auto;
     text-align: center;
   }
 
+}
 input[type="radio"] {
-  margin: 0 4px 8px 0;
-}
-
-.container {
-    padding-left: 1em;
-    padding-right: 1em;
-}
+  margin: 5px 4px 8px 0;
+}    
     
-    
-    
-select {
-    padding: 6px;
-    height: 32px;
-    border-radius: 2px;
-    }
 
 .light {
     color:darkorange;
@@ -64,7 +52,15 @@ select {
     text-align: center;
     color: darkgrey;
     background-color: navy;
+    bottom:0%;
 }
+
+input[type="radio"] {
+    
+    margin:5px;
+}
+
+
     
 /* ====================================
  Media Queries
@@ -72,27 +68,30 @@ select {
 
 @media (min-width: 700px) {
     
-    .wrap {
-        min-height: calc(100vh - 82px);
-    }
-    .container {
-        width: 70%;
-        max-width: 1000px;
-        margin: 0 auto;
+    .banner {
+        position: absolute;
+        top:0%;
+        width:100%;
     }
 
-    .wrapper { 
-        margin: 20px 10px; 
+    .wrapper {
+        position: relative;
+        display: inline;
+        padding-top: 2em 1em;
     }
-
-    .logo {
-        display: block;
-     /*   height:25%;
-        width:25%;*/
+    .wrap{
+        padding:2em;
+        border: 20px whitesmoke;
     }
 
     .main-header {
         width: 100%;
+    }
+
+  
+
+    .radio1 {
+        padding:2em;
     }
 }
 
@@ -104,4 +103,8 @@ select {
         
     }
 
+        .wrap {
+        display:block;
+        
+    }
 }

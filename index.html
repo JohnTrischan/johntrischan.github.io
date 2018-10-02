@@ -3,6 +3,10 @@
     <head>
            
         <div class="main-header">
+                <div class="banner" style=background-image:url(img/banner.png); width=100%;>
+                    <h1 class="title-header">Welcome Sports Fans</h1>
+                    <title>Win @ Sportz</title>
+                </div>
             <p id="date"></p>
             <p id="time"></p><br><br>
             <div class="wrapper" id="side-menu">
@@ -11,22 +15,20 @@
                 <a href="http://www.nba.com/scores#/" class="logo"><img src="img/basketball.png" alt="Basketball scores" height=4% width=4%></a>
                 <a href="https://www.nhl.com/scores" class="logo"><img src="img/hockey.png" alt="Hockey scores" height=3.5% width=3.5%></a>
             </div>
+            
         </div>
     </head>         
     <body>  
         <div class="wrap">
-            <div class ="container">
-                <h1 class="name">Greetings from Code Lou</h1>
-                <title>Win @ Sportz</title>
+          
                 <link rel="stylesheet" href="css/normalize.css">
                 <link rel="stylesheet" href="css/main.css">
                 <script src="main.js"></script>
         
                 <form action="index.html" method="POST">
-                <h2>Purpose:</h2>
-                <p>This website is intended to house multi-sport schedule, rosters, scores, and predict the victor.</p><br>
+                <h2 class="radio1">Purpose:</h2>
+                <p>This website is intended to house multi-sport schedule, rosters, scores, and predict the victor.</p>
                 <label>Please select what sport you are interested in:</label><br>
-                
                 <div class="radio-button">
                     <input type="radio" id="baseball" value="baseball" name="sport"><label for="baseball" class="light">Baseball</label><br>
                     <input type="radio" id="basketball" value="basketball" name="sport"><label for="basketball" class="light">Basketball</label><br>
@@ -35,10 +37,7 @@
                 </div><br>
                 <div class="sportsrow">
                     <p id="selection"></p>
-                </div>
-
-
-            </div>   
+                </div> 
         </div>    
     </body>
     <footer class="main-footer">

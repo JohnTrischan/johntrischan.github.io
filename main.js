@@ -35,7 +35,7 @@
 
    var radios = document.getElementsByName('sport');
    document.addEventListener("click", function() {
-       console.log("In Radio Function")
+       
 for (var i = 0, length = radios.length; i < length; i++)
 {
  if (radios[i].checked)
@@ -46,55 +46,38 @@ for (var i = 0, length = radios.length; i < length; i++)
   //var selection = radios[i].value
   document.getElementById('radios[i].value')
   console.log(selection)
-  selection.innerHTML = "So you're a big " + radios[i].value + " fan, eh?"
+  selection.innerHTML = "So you're a big " + radios[i].value + " fan, eh? What is your favorite team?"
   // only one radio can be logically checked, don't check the rest
-  
- }
-}
-})
+  console.log(radios[i].value)
+  if (radios[i].value == "baseball"){
+//      console.log(teams[0]);
+      console.log(teams[i].length)
+      for(t = 0, teamLength = teams[i].length; t < teamLength; t++)
+      {
+      //    console.log(teams[i][t])}
+      //document.getElementById("teamselector").innerHTML = teams[i][t]}
+      document.getElementById('teamselector').appendChild(document.createTextNode(teams[i][t]).appendChild(document.createElement("br")));}
+      //append child 
+      //var x = document.createElement("input")
+      //x.setAttribute("type", "radio");
+  } else if (radios[i].value == "basketball"){
+    console.log(teams[1]);
+  } else if (radios[i].value == "football"){
+    console.log(teams[2]);
+  } else if (radios[i].value == "hockey"){
+    console.log(teams[3]);
+ } else console.log("No Array")
+}}})
 
-// 1 is nfl
-// 2 is mlb
-// 3 is nba
+
+// 0 is mlb
+// 1 is nba
+// 2 is nfl
 // 4 is nhl
 
 
 
 var teams = [
-    [
-    'Arizona Cardinals', 
-    'Atlanta Falcons',
-    'Baltimore Ravens',
-    'Buffalo Bills',
-    'Carolina Panthers',
-    'Chicago Bears',
-    'Cincinnati Bengals',
-    'Cleveland Browns',
-    'Dallas Cowboys',
-    'Denver Broncos',
-    'Detroit Lions',
-    'Green Bay Packers',
-    'Houston Texans',
-    'Indianapolis Colts',
-    'Jacksonville Jaguars',
-    'Kansas City Chiefs',
-    'Los Angeles Chargers',
-    'Los Angeles Rams',
-    'Miami Dolphins',
-    'Minnesota Vikings',
-    'New England Patriots',
-    'New Orleans Saints',
-    'New York Giants',
-    'New York Jets',
-    'Oakland Raiders',
-    'Philadelphia Eagles',
-    'Pittsburgh Steelers',
-    'San Francisco 49ers',
-    'Seattle Seahawks',
-    'Tampa Bay Buccaneers',
-    'Tennessee Titans',
-    'Washington Redskins'
-    ],
     [
     'Arizona Diamondbacks',
     'Atlanta Braves',
@@ -160,6 +143,40 @@ var teams = [
     'Washington Wizards'
     ],
     [
+    'Arizona Cardinals', 
+    'Atlanta Falcons',
+    'Baltimore Ravens',
+    'Buffalo Bills',
+    'Carolina Panthers',
+    'Chicago Bears',
+    'Cincinnati Bengals',
+    'Cleveland Browns',
+    'Dallas Cowboys',
+    'Denver Broncos',
+    'Detroit Lions',
+    'Green Bay Packers',
+    'Houston Texans',
+    'Indianapolis Colts',
+    'Jacksonville Jaguars',
+    'Kansas City Chiefs',
+    'Los Angeles Chargers',
+    'Los Angeles Rams',
+    'Miami Dolphins',
+    'Minnesota Vikings',
+    'New England Patriots',
+    'New Orleans Saints',
+    'New York Giants',
+    'New York Jets',
+    'Oakland Raiders',
+    'Philadelphia Eagles',
+    'Pittsburgh Steelers',
+    'San Francisco 49ers',
+    'Seattle Seahawks',
+    'Tampa Bay Buccaneers',
+    'Tennessee Titans',
+    'Washington Redskins'
+    ],
+    [
     'Anaheim Ducks',
     'Arizona Coyotes',
     'Boston Bruins',
@@ -191,18 +208,5 @@ var teams = [
     'Vegas Golden Knights',
     'Washington Capitals',
     'Winnipeg Jets'
-    ] ];
+     ] ];
   
-    
-    
-
-
-
-
-
-
-
-    
-    
-   
-

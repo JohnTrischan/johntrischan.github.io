@@ -29,12 +29,13 @@
     
    // document.getElementById("sport").innerHTML = x;
 
-//........................//
-//    Radio output        //
-//........................//
+//.......................................................................//
+//    Radio output, Creates radio buttons based on selected sport        //
+//.......................................................................//
 
    var radios = document.getElementsByName('sport');
-   document.addEventListener("click", function() {
+   
+   document.addEventListener("click", function showteams() {
        
 for (var i = 0, length = radios.length; i < length; i++)
 {
@@ -46,34 +47,71 @@ for (var i = 0, length = radios.length; i < length; i++)
   //var selection = radios[i].value
   document.getElementById('radios[i].value')
   console.log(selection)
+  var result = $('#result');
+    result.empty();
+
   selection.innerHTML = "So you're a big " + radios[i].value + " fan, eh? What is your favorite team?"
   // only one radio can be logically checked, don't check the rest
   console.log(radios[i].value)
   if (radios[i].value == "baseball"){
-//      console.log(teams[0]);
-      console.log(teams[i].length)
-      for(t = 0, teamLength = teams[i].length; t < teamLength; t++)
-      {
-      //    console.log(teams[i][t])}
-      //document.getElementById("teamselector").innerHTML = teams[i][t]}
-      document.getElementById('teamselector').appendChild(document.createTextNode(teams[i][t]).appendChild(document.createElement("br")));}
-      //append child 
-      //var x = document.createElement("input")
-      //x.setAttribute("type", "radio");
+        //console.log(teams[i].length)
+        for(t = 0, teamLength = teams[i].length; t < teamLength; t++){
+        //var result = $('#result');
+        let $teamRadios = '<input type="radio" id="baseballTeam" value="' + teams[i][t] + '"name="team"><label for="baseballTeam" class="light">"' + teams[i][t] + '"</label><br>';
+        //console.log(teams[i][t])
+        console.log($teamRadios)
+        result.append($teamRadios); }
   } else if (radios[i].value == "basketball"){
-    console.log(teams[1]);
+    for(t = 0, teamLength = teams[i].length; t < teamLength; t++){
+       // var result = $('#result');
+        let $teamRadios = '<input type="radio" id="basketballTeam" value="' + teams[i][t] + '"name="team"><label for="baseballTeam" class="light">"' + teams[i][t] + '"</label><br>';
+        //console.log(teams[i][t])
+        console.log($teamRadios)
+        $('#result').append($teamRadios); }
+        console.log(teams[1]);
   } else if (radios[i].value == "football"){
-    console.log(teams[2]);
+    for(t = 0, teamLength = teams[i].length; t < teamLength; t++){
+        //var result = $('#result');
+        let $teamRadios = '<input type="radio" id="footballTeam" value="' + teams[i][t] + '"name="team"><label for="footballTeam" class="light">"' + teams[i][t] + '"</label><br>';
+        //console.log(teams[i][t])
+        console.log($teamRadios)
+        $('#result').append($teamRadios); }
+        console.log(teams[2]);
   } else if (radios[i].value == "hockey"){
+    for(t = 0, teamLength = teams[i].length; t < teamLength; t++){
+        //var result = $('#result');
+        let $teamRadios = '<input type="radio" id="hockeyTeam" value="' + teams[i][t] + '"name="team"><label for="hockeyTeam" class="light">"' + teams[i][t] + '"</label><br>';
+        //console.log(teams[i][t])
+        console.log($teamRadios)
+        $('#result').append($teamRadios); }
+        console.log(teams[2]);
     console.log(teams[3]);
  } else console.log("No Array")
-}}})
+}}});
+             
+ // $('button').click(showteams);
+  
+ // $('#result').on('change', 'input', function() {
+ //   var elem = $(this);
+ //   if (elem.is(':checked')) {
+ //     $('#search').val(elem.val());
+ //   }
+ // });
+
+
+
+
+
+
+
+
+
 
 
 // 0 is mlb
 // 1 is nba
 // 2 is nfl
-// 4 is nhl
+// 3 is nhl
 
 
 
@@ -208,5 +246,4 @@ var teams = [
     'Vegas Golden Knights',
     'Washington Capitals',
     'Winnipeg Jets'
-     ] ];
-  
+    ] ];

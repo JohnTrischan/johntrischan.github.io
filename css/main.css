@@ -6,7 +6,6 @@ html {
 
 .title-header {
     padding: 2em;
-
 }
 
 img:hover { 
@@ -37,9 +36,8 @@ body {
 h1 {
     margin: 0 auto;
     text-align: center;
-  }
-
 }
+
 input[type="radio"] {
   margin: 5px 4px 8px 0;
 }    

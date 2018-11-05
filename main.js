@@ -105,14 +105,14 @@ for (var i = 0, length = radios.length; i < length; i++)
 
 
 
-
-
-
-// 0 is mlb
-// 1 is nba
-// 2 is nfl
-// 3 is nhl
-
+//.......................................//
+// Below is the Array that containes     //
+// All of the teams for the below sports //
+// 0 is mlb                              //
+// 1 is nba                              //
+// 2 is nfl                              //
+// 3 is nhl                              //
+//.......................................//
 
 
 var teams = [

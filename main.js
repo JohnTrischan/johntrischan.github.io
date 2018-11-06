@@ -57,14 +57,14 @@ for (var i = 0, length = radios.length; i < length; i++)
         //console.log(teams[i].length)
         for(t = 0, teamLength = teams[i].length; t < teamLength; t++){
         //var result = $('#result');
-        let $teamRadios = '<input type="radio" id="baseballTeam" value="' + teams[i][t] + '"name="team"><label for="baseballTeam" class="light">"' + teams[i][t] + '"</label><br>';
+        let $teamRadios = '<input type="radio" id="baseballTeam" value="' + teams[i][t] + '"name="team"><label for="baseballTeam" class="light">' + teams[i][t] + '</label><br>';
         //console.log(teams[i][t])
         console.log($teamRadios)
         result.append($teamRadios); }
   } else if (radios[i].value == "basketball"){
     for(t = 0, teamLength = teams[i].length; t < teamLength; t++){
        // var result = $('#result');
-        let $teamRadios = '<input type="radio" id="basketballTeam" value="' + teams[i][t] + '"name="team"><label for="baseballTeam" class="light">"' + teams[i][t] + '"</label><br>';
+        let $teamRadios = '<input type="radio" id="basketballTeam" value="' + teams[i][t] + '"name="team"><label for="baseballTeam" class="light">' + teams[i][t] + '</label><br>';
         //console.log(teams[i][t])
         console.log($teamRadios)
         $('#result').append($teamRadios); }
@@ -72,7 +72,7 @@ for (var i = 0, length = radios.length; i < length; i++)
   } else if (radios[i].value == "football"){
     for(t = 0, teamLength = teams[i].length; t < teamLength; t++){
         //var result = $('#result');
-        let $teamRadios = '<input type="radio" id="footballTeam" value="' + teams[i][t] + '"name="team"><label for="footballTeam" class="light">"' + teams[i][t] + '"</label><br>';
+        let $teamRadios = '<input type="radio" id="footballTeam" value="' + teams[i][t] + '"name="team"><label for="footballTeam" class="light">' + teams[i][t] + '</label><br>';
         //console.log(teams[i][t])
         console.log($teamRadios)
         $('#result').append($teamRadios); }
@@ -80,7 +80,7 @@ for (var i = 0, length = radios.length; i < length; i++)
   } else if (radios[i].value == "hockey"){
     for(t = 0, teamLength = teams[i].length; t < teamLength; t++){
         //var result = $('#result');
-        let $teamRadios = '<input type="radio" id="hockeyTeam" value="' + teams[i][t] + '"name="team"><label for="hockeyTeam" class="light">"' + teams[i][t] + '"</label><br>';
+        let $teamRadios = '<input type="radio" id="hockeyTeam" value="' + teams[i][t] + '"name="team"><label for="hockeyTeam" class="light">' + teams[i][t] + '</label><br>';
         //console.log(teams[i][t])
         console.log($teamRadios)
         $('#result').append($teamRadios); }

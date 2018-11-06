@@ -102,11 +102,27 @@ input[type="radio"] {
         .wrapper {
         text-align: center;
         transform: scale(3,3);
-        
+        position: absolute;
+        padding-bottom: .5em;
+        width:100%;
     }
 
-        .wrap {
-        display:block;
-        
+    #date {
+        position: absolute;
+        left: 5%;
+        top:0%;
     }
-}
+    
+    
+    #time {
+        position: absolute;
+        right: 5%;  
+        top: 0%;
+    }
+
+    .wrap {
+        display:block;  
+        padding-left: .25em;
+        padding-right: .25em;  
+    }
+

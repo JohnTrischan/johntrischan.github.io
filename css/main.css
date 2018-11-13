@@ -3,7 +3,8 @@
 
 
 html {
-    background-color: #384047
+    background-color: #384047;
+    overflow-x: hidden;
 }
 
 .title-header {
@@ -11,6 +12,9 @@ html {
     padding-bottom: 2em;
 }
 
+.wrapper {
+    position: relative;
+}
 
 img:hover { 
     transform: rotate(90deg);
@@ -72,8 +76,8 @@ input[type="radio"] {
 
 
     
-/* ====================================
- Media Queries
+ /* ====================================
+ Media Queries changes website based on width greater than 700px
  ======================================*/
 
 @media (min-width: 700px) {
@@ -81,6 +85,7 @@ input[type="radio"] {
     .banner {
         position: absolute;
         top:0%;
+        left:0%;
         width:100%;
     }
 
@@ -88,6 +93,7 @@ input[type="radio"] {
         /*position: relative;
         display: inline;*/
         padding-top: 2em 1em;
+        overflow-x: hidden;
     }
     .wrap {
         padding:2em;
@@ -102,15 +108,23 @@ input[type="radio"] {
     }
 }
 
+/* ====================================
+ Media Queries changes website based on width less than 699px
+ ======================================*/
 @media (max-width: 699px) { 
     
-    
+    .banner {
+        left: 0%;
+        top: 0%;
+        width: 100%;
+    }
     .wrapper {
         text-align: center;
         transform: scale(3,3);
         position: absolute;
         padding-bottom: .5em;
         width:100%;
+        overflow-x: hidden;
     }
 
     #date {

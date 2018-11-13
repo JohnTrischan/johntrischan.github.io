@@ -1,12 +1,16 @@
 /* Header */
 
+
+
 html {
     background-color: #384047
 }
 
 .title-header {
-    padding: 2em;
+    padding-top: 2em;
+    padding-bottom: 2em;
 }
+
 
 img:hover { 
     transform: rotate(90deg);
@@ -42,6 +46,10 @@ input[type="radio"] {
   margin: 5px 4px 8px 0;
 }    
     
+.purp {
+    margin-top: 2em;
+    
+}
 
 .light {
     color:darkorange;
@@ -77,29 +85,27 @@ input[type="radio"] {
     }
 
     .wrapper {
-        position: relative;
-        display: inline;
+        /*position: relative;
+        display: inline;*/
         padding-top: 2em 1em;
     }
-    .wrap{
+    .wrap {
         padding:2em;
         border: 20px whitesmoke;
     }
 
-    .main-header {
-        width: 100%;
-    }
 
   
-
     .radio1 {
-        padding:2em;
+        padding-top:2em;
+        width:100%;
     }
 }
 
 @media (max-width: 699px) { 
     
-        .wrapper {
+    
+    .wrapper {
         text-align: center;
         transform: scale(3,3);
         position: absolute;
@@ -123,6 +129,7 @@ input[type="radio"] {
     .wrap {
         display:block;  
         padding-left: .25em;
-        padding-right: .25em;  
+        padding-right: .25em; 
+        width: 100%; 
     }
-
+}

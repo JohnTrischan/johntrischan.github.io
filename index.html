@@ -2,7 +2,7 @@
 <html>
     <head>
             <meta name="viewport" content="width=device-width, initial-scale=1">
-            <script src="main.js" type="text/javascript"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=yes">
             <title>Team Selector</title>
     </head>         
     <body>  
@@ -12,7 +12,7 @@
         </div>
         <p id="date"></p>
         <p id="time"></p><br><br>
-        <div class="wrapper" id="side-menu">
+        <div class="wrapper">
             <a href="http://www.nfl.com/scores" class="logo"><img src="img/football.png" alt="Football scores" height=5% width=5% ></a>
             <a href="https://www.mlb.com/scores" class="logo"><img src="img/baseball.png" alt="Baseball scores" height=3.5% width=3.5%></a>
             <a href="http://www.nba.com/scores#/" class="logo"><img src="img/basketball.png" alt="Basketball scores" height=4% width=4%></a>
@@ -21,17 +21,11 @@
         
     </div>
         <div class="wrap">
-          
-                <link rel="stylesheet" href="css/normalize.css">
-                <link rel="stylesheet" href="css/main.css">
-                <script src="main.js"></script>
-                <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        
                 <form action="index.html" method="POST">
-                <h2 class="radio1">Purpose:</h2>
+                <h2 class="purp">Purpose:</h2>
                 <p>This website is intended to house multi-sport schedule, rosters, scores, and predict the victor.</p>
                 <label>Please select what sport you are interested in:</label><br>
-                <div class="radio-button">
+                <div id=sports class="radio-button">
                     <input type="radio" id="baseball" value="baseball" name="sport"><label for="baseball" class="light">Baseball</label><br>
                     <input type="radio" id="basketball" value="basketball" name="sport"><label for="basketball" class="light">Basketball</label><br>
                     <input type="radio" id="football" value="football" name="sport"><label for="football" class="light">Football</label><br>
@@ -39,16 +33,14 @@
                 </div><br>
                 <p id="selection"></p>
                 
-                    <div id="result"></div>
+                <div id="result"></div>
         </div>    
     </body>
     <footer class="main-footer">
         
         <span>&copy John Trischan 2018</span>
-   
+        <link rel="stylesheet" href="css/main.css">
+        <script src="main.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     </footer>
-
-
-    
-
 </html>

@@ -25,85 +25,61 @@
         document.getElementById("time").innerHTML = h + ":" + "0" + m + " am";
     } else ("Something is horribly wrong")
 
-   // var x = document.getElementById("sport");
-    
-   // document.getElementById("sport").innerHTML = x;
-
 //.......................................................................//
 //    Radio output, Creates radio buttons based on selected sport        //
+//                                                                       //
+//    Radios allow you to select your favorite team                      //
 //.......................................................................//
 
-   var radios = document.getElementsByName('sport');
-   
-   document.addEventListener("click", function showteams() {
-       
-for (var i = 0, length = radios.length; i < length; i++)
-{
- if (radios[i].checked)
 
- {
-  // do whatever you want with the checked radio
-  //alert(radios[i].value);f
-  //var selection = radios[i].value
-  document.getElementById('radios[i].value')
-  console.log(selection)
-  var result = $('#result');
-    result.empty();
+window.onload=function(){
+      
+    var radios = document.getElementsByName('sport');
+    sports.addEventListener("click", function showteams() {
+        var clickCount = 0;
+        clickCount = clickCount + 1
+        for (var i = 0, length = radios.length; i < length; i++){
+            if (radios[i].checked){
+                document.getElementById('radios[i].value')
+                console.log(selection)
+                var result = $('#result');
+            result.empty();
 
   selection.innerHTML = "So you're a big " + radios[i].value + " fan, eh? What is your favorite team?"
   // only one radio can be logically checked, don't check the rest
   console.log(radios[i].value)
   if (radios[i].value == "baseball"){
         //console.log(teams[i].length)
-        for(t = 0, teamLength = teams[i].length; t < teamLength; t++){
+        for(t = 0, teamLength = teams[i].length - clickCount; t < teamLength; t++) {
+        //for(t = 0, teamLength = teams[i].length; t < teamLength; t++){
         //var result = $('#result');
-        let $teamRadios = '<input type="radio" id="baseballTeam" value="' + teams[i][t] + '"name="team"><label for="baseballTeam" class="light">' + teams[i][t] + '</label><br>';
-        //console.log(teams[i][t])
-        console.log($teamRadios)
-        result.append($teamRadios); }
+        let $teamRadios = '<input type="radio" id="baseballTeam" value="' + teams[i][t] + '"name="team"><label for="baseballTeam" class="light">' + teams[i][t] + '</label><br>';        
+        console.log(teams[i][t])
+        result.append($teamRadios); 
+        }
   } else if (radios[i].value == "basketball"){
-    for(t = 0, teamLength = teams[i].length; t < teamLength; t++){
-       // var result = $('#result');
+    for(t = 0, teamLength = teams[i].length - clickCount; t < teamLength; t++) {
+        // var result = $('#result');
         let $teamRadios = '<input type="radio" id="basketballTeam" value="' + teams[i][t] + '"name="team"><label for="baseballTeam" class="light">' + teams[i][t] + '</label><br>';
-        //console.log(teams[i][t])
-        console.log($teamRadios)
-        $('#result').append($teamRadios); }
-        console.log(teams[1]);
+        console.log(teams[i][t])
+        result.append($teamRadios); }
   } else if (radios[i].value == "football"){
-    for(t = 0, teamLength = teams[i].length; t < teamLength; t++){
+    for(t = 0, teamLength = teams[i].length - clickCount; t < teamLength; t++) {
         //var result = $('#result');
         let $teamRadios = '<input type="radio" id="footballTeam" value="' + teams[i][t] + '"name="team"><label for="footballTeam" class="light">' + teams[i][t] + '</label><br>';
         //console.log(teams[i][t])
-        console.log($teamRadios)
-        $('#result').append($teamRadios); }
-        console.log(teams[2]);
+        console.log(teams[i][t])
+        result.append($teamRadios); }
   } else if (radios[i].value == "hockey"){
-    for(t = 0, teamLength = teams[i].length; t < teamLength; t++){
+    for(t = 0, teamLength = teams[i].length - clickCount; t < teamLength; t++) {
         //var result = $('#result');
         let $teamRadios = '<input type="radio" id="hockeyTeam" value="' + teams[i][t] + '"name="team"><label for="hockeyTeam" class="light">' + teams[i][t] + '</label><br>';
-        //console.log(teams[i][t])
-        console.log($teamRadios)
-        $('#result').append($teamRadios); }
-        console.log(teams[2]);
-    console.log(teams[3]);
+        console.log(teams[i][t])
+        result.append($teamRadios); }
  } else console.log("No Array")
-}}});
-             
- // $('button').click(showteams);
-  
- // $('#result').on('change', 'input', function() {
- //   var elem = $(this);
- //   if (elem.is(':checked')) {
- //     $('#search').val(elem.val());
- //   }
- // });
-
-
-
-
-
-
-
+}}})
+};
+   
 
 //.......................................//
 // Below is the Array that containes     //
@@ -246,4 +222,4 @@ var teams = [
     'Vegas Golden Knights',
     'Washington Capitals',
     'Winnipeg Jets'
-    ] ];
+] ];

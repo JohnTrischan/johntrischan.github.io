@@ -7,41 +7,42 @@
             <title>Team Selector</title>
     </head>         
     <body>  
-    <div class="main-header">
-        <div class="banner" style=background-image:url(img/banner.png); width=100%;>
-            <h1 class="title-header">Welcome Sports Fans</h1>
+        <div class="main-header">
+            <div class="banner" style=background-image:url(img/banner.png); width=100%;>
+                <h1 class="title-header">Welcome Sports Fans</h1>
+            </div>
+            <!--The two <p> below create a place for the js date and time to display -->
+            <p id="date"></p>
+            <p id="time"></p><br><br>
+            <!--Wrapper Div creates links to each professional sport score webpage-->
+            <div class="wrapper">
+                <a href="https://www.nfl.com/scores" class="logo"><img src="img/football.png" alt="Football scores" height=5% width=5% ></a>
+                <a href="https://www.mlb.com/scores" class="logo"><img src="img/baseball.png" alt="Baseball scores" height=3.5% width=3.5%></a>
+                <a href="https://www.nba.com/scores#/" class="logo"><img src="img/basketball.png" alt="Basketball scores" height=4% width=4%></a>
+                <a href="https://www.nhl.com/scores" class="logo"><img src="img/hockey.png" alt="Hockey scores" height=3.5% width=3.5%></a>
+            </div>
+            
         </div>
-        <p id="date"></p>
-        <p id="time"></p><br><br>
-        <div class="wrapper">
-            <a href="https://www.nfl.com/scores" class="logo"><img src="img/football.png" alt="Football scores" height=5% width=5% ></a>
-            <a href="https://www.mlb.com/scores" class="logo"><img src="img/baseball.png" alt="Baseball scores" height=3.5% width=3.5%></a>
-            <a href="https://www.nba.com/scores#/" class="logo"><img src="img/basketball.png" alt="Basketball scores" height=4% width=4%></a>
-            <a href="https://www.nhl.com/scores" class="logo"><img src="img/hockey.png" alt="Hockey scores" height=3.5% width=3.5%></a>
-        </div>
-        
-    </div>
         <div class="wrap">
-                <form action="index.html" method="POST">
-                <h2 class="purp">Purpose:</h2>
-                <p>This website is intended to house multi-sport schedule, rosters, scores, and predict the victor.</p>
-                <label>Please select what sport you are interested in:</label><br>
-                <div id=sports class="radio-button">
-                    <input type="radio" id="baseball" value="baseball" name="sport"><label for="baseball" class="light">Baseball</label><br>
-                    <input type="radio" id="basketball" value="basketball" name="sport"><label for="basketball" class="light">Basketball</label><br>
-                    <input type="radio" id="football" value="football" name="sport"><label for="football" class="light">Football</label><br>
-                    <input type="radio" id="hockey" value="hockey" name="sport"><label for="hockey" class="light">Hockey</label><br>
-                </div><br>
+            <form action="index.html" method="POST">
+            <h2 class="purp">Purpose:</h2>
+            <p>This website is intended to house multi-sport schedule, rosters, scores, and predict the victor.</p>
+            <label>Please select what sport you are interested in:</label><br>
+            <!--Below Div creates the initial Radio Buttons to select sport-->
+            <div id=sports class="radio-button">
+                <input type="radio" id="baseball" value="baseball" name="sport"><label for="baseball" class="light">Baseball</label><br>
+                <input type="radio" id="basketball" value="basketball" name="sport"><label for="basketball" class="light">Basketball</label><br>
+                <input type="radio" id="football" value="football" name="sport"><label for="football" class="light">Football</label><br>
+                <input type="radio" id="hockey" value="hockey" name="sport"><label for="hockey" class="light">Hockey</label><br>
+            <!-- Div below gives a place for the Radio Result-->
+            </div><br>
                 <p id="selection"></p>
-                
                 <div id="result"></div>
-        </div>    
+            </div>    
     </body>
-    <footer class="main-footer">
-        
+    <footer class="main-footer"> 
         <span>&copy John Trischan 2018</span>
         <link rel="stylesheet" href="css/main.css">
-        <!-- <link rel="stylesheet" href="css/normalize.css"> -->
         <script src="main.js"></script>
     </footer>
 </html>
